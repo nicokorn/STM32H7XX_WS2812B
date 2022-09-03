@@ -232,7 +232,7 @@
                     <item>rgb_r</item>
                     <item>rgb_g</item>
                     <item>rgb_b</item>
-                    <item></item>
+                    <item />
                 </expressions>
                 <col-names>
                     <item>Expression</item>

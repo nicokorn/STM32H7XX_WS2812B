@@ -192,12 +192,12 @@ static WS2812B_StatusTypeDef init_dma( void )
    // DMA1 Channel2 configuration ----------------------------------------------
    DMA_HandleStruct_UEV.Instance                   = DMA1_Stream0;
    DMA_HandleStruct_UEV.Init.Request               = DMA_REQUEST_TIM2_UP;  
-   DMA_HandleStruct_UEV.Init.Direction 			   = DMA_MEMORY_TO_PERIPH;
-   DMA_HandleStruct_UEV.Init.PeriphInc 			   = DMA_PINC_DISABLE;
+   DMA_HandleStruct_UEV.Init.Direction             = DMA_MEMORY_TO_PERIPH;
+   DMA_HandleStruct_UEV.Init.PeriphInc             = DMA_PINC_DISABLE;
    DMA_HandleStruct_UEV.Init.MemInc                = DMA_MINC_DISABLE;
    DMA_HandleStruct_UEV.Init.Mode                  = DMA_NORMAL;
    DMA_HandleStruct_UEV.Init.PeriphDataAlignment   = DMA_PDATAALIGN_HALFWORD;
-   DMA_HandleStruct_UEV.Init.MemDataAlignment 		= DMA_MDATAALIGN_HALFWORD;
+   DMA_HandleStruct_UEV.Init.MemDataAlignment      = DMA_MDATAALIGN_HALFWORD;
    DMA_HandleStruct_UEV.Init.Priority              = DMA_PRIORITY_HIGH;
    if(HAL_DMA_Init(&DMA_HandleStruct_UEV) != HAL_OK)
    {
@@ -208,12 +208,12 @@ static WS2812B_StatusTypeDef init_dma( void )
    // DMA1 Stream 1 configuration ----------------------------------------------
    DMA_HandleStruct_CC1.Instance                   = DMA1_Stream1;
    DMA_HandleStruct_CC1.Init.Request               = DMA_REQUEST_TIM2_CH1;  
-   DMA_HandleStruct_CC1.Init.Direction 		      = DMA_MEMORY_TO_PERIPH;
-   DMA_HandleStruct_CC1.Init.PeriphInc 		      = DMA_PINC_DISABLE;
+   DMA_HandleStruct_CC1.Init.Direction             = DMA_MEMORY_TO_PERIPH;
+   DMA_HandleStruct_CC1.Init.PeriphInc             = DMA_PINC_DISABLE;
    DMA_HandleStruct_CC1.Init.MemInc                = DMA_MINC_ENABLE;
    DMA_HandleStruct_CC1.Init.Mode                  = DMA_NORMAL;
-   DMA_HandleStruct_CC1.Init.PeriphDataAlignment 	= DMA_PDATAALIGN_HALFWORD;
-   DMA_HandleStruct_CC1.Init.MemDataAlignment 		= DMA_MDATAALIGN_HALFWORD;
+   DMA_HandleStruct_CC1.Init.PeriphDataAlignment   = DMA_PDATAALIGN_HALFWORD;
+   DMA_HandleStruct_CC1.Init.MemDataAlignment      = DMA_MDATAALIGN_HALFWORD;
    DMA_HandleStruct_CC1.Init.Priority              = DMA_PRIORITY_HIGH;
    if(HAL_DMA_Init(&DMA_HandleStruct_CC1) != HAL_OK)
    {
@@ -224,12 +224,12 @@ static WS2812B_StatusTypeDef init_dma( void )
    // DMA1 Stream 2 configuration ----------------------------------------------
    DMA_HandleStruct_CC2.Instance                   = DMA1_Stream2;
    DMA_HandleStruct_CC2.Init.Request               = DMA_REQUEST_TIM2_CH2;  
-   DMA_HandleStruct_CC2.Init.Direction 			   = DMA_MEMORY_TO_PERIPH;
-   DMA_HandleStruct_CC2.Init.PeriphInc 			   = DMA_PINC_DISABLE;
+   DMA_HandleStruct_CC2.Init.Direction             = DMA_MEMORY_TO_PERIPH;
+   DMA_HandleStruct_CC2.Init.PeriphInc             = DMA_PINC_DISABLE;
    DMA_HandleStruct_CC2.Init.MemInc                = DMA_MINC_DISABLE;
    DMA_HandleStruct_CC2.Init.Mode                  = DMA_NORMAL;
-   DMA_HandleStruct_CC2.Init.PeriphDataAlignment 	= DMA_PDATAALIGN_HALFWORD;
-   DMA_HandleStruct_CC2.Init.MemDataAlignment 		= DMA_MDATAALIGN_HALFWORD;
+   DMA_HandleStruct_CC2.Init.PeriphDataAlignment   = DMA_PDATAALIGN_HALFWORD;
+   DMA_HandleStruct_CC2.Init.MemDataAlignment      = DMA_MDATAALIGN_HALFWORD;
    DMA_HandleStruct_CC2.Init.Priority              = DMA_PRIORITY_HIGH;
    if(HAL_DMA_Init(&DMA_HandleStruct_CC2) != HAL_OK)
    {
