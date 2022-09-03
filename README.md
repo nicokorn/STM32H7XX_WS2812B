@@ -25,4 +25,6 @@ But you can use this library for any other IDE or stm32
 microcontroller. Just be sure to set the correct DMA
 streams/channels, otherwise it won't work.
 
-![VW Bulli 2](./led.jpg)
+![led](./led.jpg)
+![led](./WS2812B_Protocol_1.PNG)
+![led](./WS2812B_Protocol_1.jpg)
