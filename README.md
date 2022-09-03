@@ -27,4 +27,4 @@ streams/channels, otherwise it won't work.
 
 ![led](./led.jpg)
 ![led](./WS2812B_Protocol_1.PNG)
-![led](./WS2812B_Protocol_1.jpg)
+![led](./WS2812B_Protocol_2.jpg)
