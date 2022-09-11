@@ -1,0 +1,3 @@
+config DRIVER_WS2812B
+  bool "Enable ws2812 rgb led driver module"
+  default n
